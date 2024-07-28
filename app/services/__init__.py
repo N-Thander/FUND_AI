@@ -1,3 +1,2 @@
 
-# since following proper standard that's why make this dir but this usually remains empty
-
+#  made cause giving the project a proper structure
