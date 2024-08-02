@@ -1,28 +1,132 @@
-
-
-
-{% comment %} not this is just the sample html for testing need to be replaced later {% endcomment %}
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
-    <h2>Login</h2>
-    <form method="POST" action="">
-        {{ form.hidden_tag() }}
-        <p>
-            {{ form.email.label }}<br>
-            {{ form.email(size=32) }}<br>
-        </p>
-        <p>
-            {{ form.password.label }}<br>
-            {{ form.password(size=32) }}<br>
-        </p>
-        <p>{{ form.submit() }}</p>
-    </form>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aeonik Pro TRIAL:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login">
+      <div class="login-inner">
+        <div class="frame-child"></div>
+      </div>
+      <div class="login-child"></div>
+      <div class="virtuogen"></div>
+      <div class="login-item"></div>
+      <footer class="frame-parent">
+        <div class="frame-wrapper">
+          <div class="frame-group">
+            <div class="frame-container">
+              <div class="fundai-parent">
+                <h1 class="fundai">Fund.Ai</h1>
+                <div class="funds-ai-optimizes">
+                  Funds AI optimizes investment strategies and provide
+                  predictive financial insights.
+                </div>
+              </div>
+            </div>
+            <div class="statusbutton-parent">
+              <button class="statusbutton">
+                <div class="label">Let’s get started</div>
+                <img
+                  class="arrowright-icon"
+                  alt=""
+                  src="./public/arrowright.svg"
+                />
+              </button>
+              <button class="statusbutton1">
+                <div class="label1">Have an account? Log In</div>
+              </button>
+              <div class="by-proceeding-you-container">
+                <span>By proceeding, you agree to our </span>
+                <span class="terms-conditions-and-privac">
+                  <span>terms & conditions</span>
+                  <span class="and">, and </span>
+                  <span class="privacy-policy">privacy policy</span>
+                </span>
+                <span>.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-child"></div>
+          <div class="frame-div">
+            <div class="frame-parent1">
+              <div class="virtuogen-wrapper">
+                <h1 class="virtuogen1">
+                  <span> </span>
+                  <span class="virtuogen2">VirtuoGen</span>
+                </h1>
+              </div>
+              <div class="virtuogen-inc-2023">
+                VirtuoGen, Inc. @2023 All rights reserved
+              </div>
+            </div>
+            <div class="frame-wrapper1">
+              <div class="frame-parent2">
+                <div class="bilinkedin-wrapper">
+                  <img
+                    class="bilinkedin-icon"
+                    alt=""
+                    src="./public/bilinkedin.svg"
+                  />
+                </div>
+                <div class="fa6-brandssquare-x-twitter-wrapper">
+                  <img
+                    class="fa6-brandssquare-x-twitter-icon"
+                    alt=""
+                    src="./public/fa6brandssquarextwitter.svg"
+                  />
+                </div>
+                <img
+                  class="cibdiscord-icon"
+                  alt=""
+                  src="./public/cibdiscord.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer-inner">
+            <div class="frame-parent3">
+              <div class="product-parent">
+                <div class="product">Product</div>
+                <div class="platform-parent">
+                  <div class="platform">Platform</div>
+                  <div class="resources">Resources</div>
+                  <div class="pricing">Pricing</div>
+                </div>
+              </div>
+              <div class="resources-parent">
+                <div class="resources1">Resources</div>
+                <div class="terms-and-conditions-parent">
+                  <a class="terms-and-conditions">Terms and conditions</a>
+                  <a class="privacy-policy1">Privacy Policy</a>
+                  <div class="cookie-policy">Cookie Policy</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

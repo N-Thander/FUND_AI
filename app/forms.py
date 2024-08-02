@@ -1,16 +1,14 @@
-from flask_wtf import FlaskForm 
-from wtforms import StringField, PasswordField, SubmitField
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, SubmitField, TelField
 from wtforms.validators import DataRequired, Email, EqualTo
 
-class SignIn(FlaskForm):
-    name = StringField('Name', validators=[DataRequired()])
+class SignUp(FlaskForm):
+    first_name = StringField('First Name', validators=[DataRequired()])
+    last_name = StringField('Last Name', validators=[DataRequired()])
     email = StringField('Email', validators=[DataRequired(), Email()])
+    contact_number = TelField('Contact Number', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired(), EqualTo('confirm_password', message='Passwords Must Match')])
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired()])
-    submit = SubmitField('Sign Up')
-    
-class LogIn(FlaskForm):
-    name = StringField('Name', validators=[DataRequired()])
-    email = StringField('Email', validators=[DataRequired(), Email()])
-    password = PasswordField('Password', validators=[DataRequired()])
-    submit = SubmitField('Login')
+    submit = SubmitField('Register')
+
+# class log in will be in a similar format

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/sign_up.css')}}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aeonik Pro TRIAL:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;500&display=swap" />
+  </head>
+  <body>
+    <div class="sign-up">
+      <section class="sign-up-inner">
+        <form method="POST" action="{{ url_for('main.sign_up') }}" class="frame-form">
+          {{ form.hidden_tag() }}
+          <div class="your-space-log-in-now-wrapper">
+            <h1 class="your-space-log-container">
+              <span class="space">Your Space, Log In Now</span>
+            </h1>
+          </div>
+          <div class="registration-content-parent">
+            <div class="registration-content">
+              <div class="register-to-get">Register to get started</div>
+            </div>
+            <div class="registration-form">
+              <div class="first-name-field-parent">
+                <div class="first-name-field">
+                  {{ form.first_name.label }} {{ form.first_name(class_='first-name') }}
+                </div>
+                <div class="last-name-field">
+                  {{ form.last_name.label }} {{ form.last_name(class_='last-name') }}
+                  <div class="div3"></div>
+                </div>
+              </div>
+              <div class="email-field">
+                <div class="email-input">
+                  <div class="field">
+                    <div class="email-icon-container">
+                      <div class="email-icon-container-child"></div>
+                      {{ form.email(class_='ignaviaa', placeholder='Ignaviaa') }}
+                    </div>
+                  </div>
+                  <div class="confirmation">
+                    <div class="rectangle-group">
+                      <div class="rectangle-div"></div>
+                      {{ form.confirm_password(class_='ignaviaa1', placeholder='Confirm Password') }}
+                    </div>
+                  </div>
+                </div>
+                <div class="email">Email</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-field">
+            <div class="div4">
+              <div class="div5"></div>
+              <div class="child"></div>
+              {{ form.contact_number(class_='contact-number', placeholder='Ignaviaa @gmail.com') }}
+            </div>
+          </div>
+          <div class="register-button">
+            <div class="contact-number1">Contact Number</div>
+            <div class="div6">
+              <div class="item"></div>
+              {{ form.contact_number(class_='input', placeholder='+91 1234 5678') }}
+            </div>
+          </div>
+          <button type="submit" class="register-wrapper">
+            <div class="register">{{ form.submit() }}</div>
+          </button>
+        </form>
+      </section>
+      <div class="button"></div>
+      <div class="sign-up-child"></div>
+      <div class="virtuogen3"></div>
+      <section class="footer1">
+        <div class="footer-item"></div>
+        <div class="footer-content">
+          <div class="frame-parent6">
+            <div class="virtuogen-container">
+              <h1 class="virtuogen4">
+                <span> </span>
+                <span class="virtuogen5">VirtuoGen</span>
+              </h1>
+            </div>
+            <div class="virtuogen-inc-20231">
+              VirtuoGen, Inc. @2023 All rights reserved
+            </div>
+          </div>
+          <div class="social-links">
+            <div class="social-icons">
+              <div class="bilinkedin-container">
+                <img class="bilinkedin-icon1" alt="" src="{{ url_for('static', filename='images/bilinkedin.svg') }}" />
+              </div>
+              <div class="fa6-brandssquare-x-twitter-container">
+                <img class="fa6-brandssquare-x-twitter-icon1" alt="" src="{{ url_for('static', filename='images/fa6brandssquarextwitter.svg') }}" />
+              </div>
+              <img class="cibdiscord-icon1" alt="" src="{{ url_for('static', filename='images/cibdiscord.svg') }}" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="link-columns-parent">
+            <div class="link-columns">
+              <div class="product1">Product</div>
+              <div class="legal-links">
+                <div class="platform1">Platform</div>
+                <div class="resources2">Resources</div>
+                <div class="pricing1">Pricing</div>
+              </div>
+            </div>
+            <div class="div7">
+              <div class="resources3">Resources</div>
+              <div class="div8">
+                <a class="terms-and-conditions1">Terms and conditions</a>
+                <a class="privacy-policy2">Privacy Policy</a>
+                <div class="cookie-policy1">Cookie Policy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
